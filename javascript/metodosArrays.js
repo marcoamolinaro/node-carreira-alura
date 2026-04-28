@@ -21,3 +21,12 @@ mistura.forEach(item => {
         console.log('Item: ' + item);
     }
 }); // Imprime cada item do array com seu índice    
+
+let numerosSet = new Set(); // Cria um Set para armazenar números únicos
+
+numerosSet.add(1);
+numerosSet.add(2);
+numerosSet.add(3);
+numerosSet.add(2); // Tenta adicionar um número duplicado
+
+console.log('Números no Set:', numerosSet); // Imprime os números únicos no Set
