@@ -43,3 +43,13 @@ console.log('Autor: ', autor); // Imprime o nome do autor
 livro.autor = autor; // Adiciona o objeto autor como uma propriedade do objeto livro
 
 console.log('Livro com autor:', livro); // Imprime o livro com o autor incluído
+
+const livro1 = {
+  titulo: "O Hobbit",
+  autor: "J.R.R. Tolkien",
+  paginas: 310
+};
+
+const propriedade = "autor";
+console.log(livro1[propriedade]); // Imprime: J.R.R. Tolkien
+
