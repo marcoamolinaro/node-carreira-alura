@@ -11,3 +11,13 @@ console.log('Números ímpares: ' + numerosImpares);
 const numerosDobrados = numeros.map((numero) => numero * 2); // Cria um novo array com os números dobrados
 
 console.log('Números dobrados: ' + numerosDobrados);
+
+const mistura = [1, 'dois', true, {chave: 'valor'}, () => 'funcao']; // Array com diferentes tipos de dados
+
+mistura.forEach(item => {
+    if (typeof item === 'function') {
+        console.log('Item é uma função: ' + item());
+    } else {
+        console.log('Item: ' + item);
+    }
+}); // Imprime cada item do array com seu índice    
